@@ -1,0 +1,212 @@
+
+function Student() {
+  
+  
+  const[counter,setCounter] = React.useState(0);
+  const[counter1,setCounter1] = React.useState(0);
+  const[counter2,setCounter2] = React.useState(0);
+  const[counter3,setCounter3] = React.useState(0);
+  const[counter4,setCounter4] = React.useState(0);
+  const[counter5,setCounter5] = React.useState(0);
+   const[counter6,setCounter6] = React.useState(0);
+   const[counter7,setCounter7] = React.useState(0);
+  const[tea,tp] = React.useState(0);
+  const[milk,mp] = React.useState(0);
+  const[butter,bp] = React.useState(0);
+  const[soap,sp] = React.useState(0);
+  const[colgate,cp] = React.useState(0);
+   const[perfume,pp] = React.useState(0);
+   const[tshirt,thp] = React.useState(0);
+   const[short,shp] = React.useState(0);
+  var tprice = () => {
+    tp(tea+200)
+  }
+  var tprice1 = () =>{
+    if(tea >0){
+    tp(tea-200)
+    }
+  }
+   var mprice = () => {
+    mp(milk+100)
+  }
+    var mprice1 = () =>{
+    if(milk >0){
+    mp(milk-100)
+    }
+  }
+   var bprice = () => {
+    bp(butter+300)
+  }
+  var bprice1 = () =>{
+    if(butter >0){
+    bp(butter-300)
+    }
+  }
+   var sprice = () => {
+    sp(soap+50)
+  }
+  var sprice1 = () =>{
+    if(soap >0){
+    sp(soap-50)
+    }
+  }
+   var cprice = () => {
+    cp(colgate+500)
+  }
+  var cprice1 = () =>{
+    if(colgate >0){
+    cp(colgate-500)
+    }
+  }
+  var pprice = () => {
+    pp(perfume+750)
+  }
+  var pprice1 = () =>{
+    if(perfume >0){
+    pp(perfume-750)
+    }
+  }
+  var thprice = () => {
+    thp(tshirt+150)
+  }
+  var thprice1 = () =>{
+    if(tshirt>0){
+    thp(tshirt-150)
+    }
+  }
+  var shprice = () => {
+    shp(short+350)
+  }
+  var shprice1 = () =>{
+    if(short >0){
+    shp(short-350)
+    }
+  }
+  
+  var increment = () => {
+    setCounter(counter+1)
+  }
+  var increment1 = () => {
+    setCounter1(counter1+1)
+  }
+  var increment2 = () => {
+    setCounter2(counter2+1)
+  }
+  var increment3 = () => {
+    setCounter3(counter3+1)
+  }
+  var increment4 = () => {
+    setCounter4(counter4+1)
+  }
+   var increment5 = () => {
+    setCounter5(counter5+1)
+  }
+  
+    var increment6 = () => {
+    setCounter6(counter6+1)
+  }
+  
+     var increment7= () => {
+    setCounter7(counter7+1)
+  }
+  
+  
+  var decrement = () =>{
+    if(counter >0){
+    setCounter(counter-1)
+    }
+  }
+  var decrement1 = () =>{
+    if(counter1 >0){
+    setCounter1(counter1-1)
+    }
+  }
+   var decrement2 = () =>{
+    if(counter2 >0){
+    setCounter2(counter2-1)
+    }
+  }
+    var decrement3 = () =>{
+    if(counter3 >0){
+    setCounter3(counter3-1)
+    }
+  }
+     var decrement4 = () =>{
+    if(counter4 >0){
+    setCounter4(counter4-1)
+    }
+  }
+     var decrement5 = () =>{
+    if(counter5 >0){
+    setCounter5(counter5-1)
+    }
+  }
+     var decrement6 = () =>{
+    if(counter6 >0){
+    setCounter6(counter6-1)
+    }
+  }
+     var decrement7 = () =>{
+    if(counter7 >0){
+    setCounter7(counter7-1)
+    }
+  }
+  
+    return (
+      <div>
+        <h1> price list
+        <ol>
+          <li>Milk:100/-</li>
+           <li>Tea:200/-</li>
+           <li>Butter:300/-</li>
+           <li>Soap:50/-</li>
+           <li>Colgate:500/-</li>
+          <li>Perfume:750/-</li>
+          <li>Tshirt:150/-</li>
+          <li>Short:350/-</li>
+          </ol></h1>
+         <h1> MILK =>> QUANTITY: {counter}  =>>   PRICE:{milk} </h1>
+         <button onClick ={()=>{increment();mprice();}}> Add to Cart</button> 
+         <button onClick = {()=>{decrement();mprice1(); }}> Remove from Cart</button> 
+        
+       
+         <h1> TEA =>> QUANTITY: {counter1} =>>PRICE:{tea} </h1>
+         <button onClick ={()=>{increment1();tprice();}}>Add to Cart</button> 
+         <button onClick ={()=>{decrement1();tprice1();}}> Remove from Cart</button> 
+        
+        <h1> BUTTER =>> QUANTITY: {counter2} =>>PRICE:{butter} </h1>
+         <button onClick ={()=>{increment2();bprice()}}> Add to Cart</button> 
+         <button onClick ={()=>{decrement2();bprice1();}}>  Remove from Cart</button> 
+        
+         <h1> SOAP =>> QUANTITY: {counter3} =>>PRICE:{soap} </h1>
+         <button onClick ={()=>{increment3();sprice()}}> Add to Cart</button> 
+         <button onClick ={()=>{decrement3();sprice1();}}>  Remove from Cart</button> 
+        
+        <h1> COLGATE =>> QUANTITY: {counter4} =>>PRICE:{colgate} </h1>
+         <button onClick ={()=>{increment4();cprice()}}> Add to Cart</button> 
+         <button onClick ={()=>{decrement4();cprice1();}}>  Remove from Cart</button> 
+        
+        
+         <h1> PERFUME =>> QUANTITY: {counter5} =>>PRICE:{perfume} </h1>
+         <button onClick ={()=>{increment5();pprice()}}> Add to Cart</button> 
+         <button onClick ={()=>{decrement5();pprice1();}}>  Remove from Cart</button> 
+        
+         <h1> TSHIRT =>> QUANTITY: {counter6} =>>PRICE:{tshirt} </h1>
+         <button onClick ={()=>{increment6();thprice()}}> Add to Cart</button> 
+         <button onClick ={()=>{decrement6();thprice1();}}>  Remove from Cart</button> 
+        
+         <h1> SHORT =>> QUANTITY: {counter7} =>>PRICE:{short} </h1>
+         <button onClick ={()=>{increment7();shprice()}}> Add to Cart</button> 
+         <button onClick ={()=>{decrement7();shprice1();}}>  Remove from Cart</button> 
+        <h1> Total Items:{counter+counter1+counter2+counter3+counter4+counter5+counter6+counter7}</h1>
+        <h1> Total Price :{tea+milk+butter+soap+colgate+perfume+tshirt+short}</h1>
+       
+      </div>
+     
+    )
+}
+
+ReactDOM.render(
+  <Student />,
+  document.getElementById('root')
+);
